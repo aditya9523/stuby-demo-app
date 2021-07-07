@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+<link rel="stylesheet" href="index.css">
+<style>
+
+    /*STARTING OF THE CSS FOR THE NEWS ALIGNMENT PANNEL*/
+    .all-browsers
+      {
+        margin: 0;
+        padding: 5px;
+        background-color: rgb(231, 233, 109);
+      }
+      
+      .all-browsers > h1, .browser 
+      {
+        margin: 10px;
+        padding: 5px;
+      }
+      
+      .browser 
+      {
+        background: white;
+      }
+      
+      .browser > h2, p 
+      {
+        margin: 4px;
+        font-size: 90%;
+      }
+
+      /*ENDING OF THE CSS FOR THE NEWS ALIGNMENT PANNEL*/
+
+      /*THIS CSS IS FOR THE "NEWS" FOR id="heading_news_element"*/
+      h1.a
+      {
+        margin: 35px;
+        margin-bottom: 10px;
+        text-align:start;
+      }
+
+      
+</style>
+</head>
+
+<body>
+    <!-- top name start  -->
+    <div id="top" class="mw-100 bg-warning fixed-top shadow">
+        <h3 class="text-center" style="font-weight: 900 ; font-family: 'Times New Roman', Times, serif; font-size: 45px; text-shadow:4px 4px 5px rgb(83, 13, 196);">STUBY</h3>
+        
+    </div>
+    <!-- top name end -->
+
+    <!--STARTING OF NEWS PANEL CODING-->
+
+    <div id="news_element">
+<h1 id="heading_news_element" class="a">News</h1>
+
+        <article class="all-browsers">
+            <h1>Popular News</h1>
+            <article class="browser">
+                <script>
+                    function myFunction() {
+                      window.location.href="https://physicsworld.com/l/audio/";
+                    }
+                   </script>
+                <input type="image" src="https://physicsworld.com/wp-content/uploads/2021/05/AI-neural-network-concept-1178245788-iStock_monsitj_resized-scaled.jpg" alt="Submit" width="320 mx-auto" height="auto" onclick="myFunction()">
+              <p>We have two regular podcast series. Physics World Weekly looks at the latest events and headlines in physics, as well as featuring short interviews with scientists and our team of journalists. Physics World Stories takes a more in-depth look at a topic that we feel warrants further coverage.</p>
+            </article>
+            <article class="browser">
+                <script>
+                    function myFunction1() {
+                      window.location.href="https://jobs.newscientist.com/en-au/article/what-does-a-chemist-do-/";
+                    }
+                   </script>
+                <input type="image" src="https://jobs.newscientist.com/getasset/c40a5488-11be-43b0-843f-a2e6ef9f0612/" alt="Submit" width="320 auto" height="auto" onclick="myFunction1()">
+              <p>Chemists investigate the properties of matter at the level of atoms and molecules. They measure proportions and reaction rates in order to understand unfamiliar substances and how they behave, or to create new compounds for use in a variety of practical applications. To do this they use a wide range of analytical techniques and instrumentation, including chromatography and spectroscopy.</p>
+            </article>
+            <article class="browser">
+                <script>
+                    function myFunction2() {
+                      window.location.href="https://blogs.scientificamerican.com/cross-check/is-mathematics-like-science-pluralistic/";
+                    }
+                   </script>
+              <input type="image" src="https://static.scientificamerican.com/blogs/cache/file/15E43A6F-3941-471A-BF4A81AECDC8C8AA_source.jpg?w=590&h=800&19535223-FF51-4AE3-A05064AFC6E375F5" alt="Submit" width="320 auto" height="auto" onclick="myFunction2()">
+              <p>mathematician Ronald Graham. I hadn’t heard from him since 1997, when I wrote a profile of him for Scientific American. He also served as a source for my notorious 1993 article “The Death of Proof,” which reported that “the doubts riddling modern human thought have finally infected mathematics.”</p>
+            </article>
+          </article>
+    </div>
+
+    <!--ENDING OF NEWS PANEL CODING-->
+
+     <!-- bottm navigation start -->
+    <div id="Nav" class="row text-center fixed-bottom border-dark">
+        
+      <div style="background-color:  #df9c0d;" onclick="feed()" id="hov"class="col-2 my-auto" ><a href="feed.html"><img id="icon" src="Images\feed.png"></a></div>
+
+      <div onclick="councle()" id="hov"class="col-2 my-auto bg-warning"><a href="councle.html"><img id="icon" src="Images\person.png"> </a></div>
+
+      <div id="hov"class="col-4 my-auto bg-warning"> <a href="index.html"><img id="icon" src="Images\home.png"></a> </div>
+      <div id="hov"class="col-2 my-auto bg-warning"><a href="chat.html"><img id="icon" src="Images\chats.png"></a> </div>
+      <div id="hov"class="col-2 my-auto bg-warning"><a href="profile.html"><img id="icon" src="Images\acc.png"></a></div>
+  </div>
+  <!-- bottom navigation end -->
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
